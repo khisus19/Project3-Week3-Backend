@@ -13,6 +13,10 @@ class UserService {
         userInfoInList.push(user.bio)
         return userInfoInList
     }
+
+    static updateUserUsername(user, newUserName) {
+        return user.username = newUserName
+    }
 }
 
 module.exports = UserService
